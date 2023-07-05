@@ -1,5 +1,5 @@
 import Loader from 'react-loaders'
-import "./Contact.scss"
+import './Contact.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { useRef } from 'react'
@@ -19,7 +19,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_rs8t77h', 'template_br7bhxs', form.current, '6rBWqwMmOEAILyaMQ')
+      .sendForm(
+        'service_rs8t77h',
+        'template_br7bhxs',
+        form.current,
+        '6rBWqwMmOEAILyaMQ'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -77,8 +82,44 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className="gear-box">
+          <div className="gearbox">
+            <div className="overlay" />
+            <div className="gear one">
+              <div className="gear-inner">
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+              </div>
+            </div>
+            <div className="gear two">
+              <div className="gear-inner">
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+              </div>
+            </div>
+            <div className="gear three">
+              <div className="gear-inner">
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+              </div>
+            </div>
+            <div className="gear four large">
+              <div className="gear-inner">
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+                <div className="bar" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-zig-zag-deflect" />
     </>
   )
 }
