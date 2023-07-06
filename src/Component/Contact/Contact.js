@@ -12,7 +12,7 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 5000)
+    }, 3000)
   }, [])
 
   const sendEmail = (e) => {
@@ -50,14 +50,14 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name"  />
+                  <input placeholder="Name" type="text" name="name" required  />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
-                    type="text"
+                    type="email"
                     name="email"
-                    
+                    required
                   />
                 </li>
                 <li>
@@ -65,7 +65,7 @@ const Contact = () => {
                     placeholder="Subject"
                     type="text"
                     name="subject"
-                    
+                    required
                   />
                 </li>
                 <li>

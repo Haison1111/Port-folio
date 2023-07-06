@@ -11,7 +11,7 @@ const Portfolio = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 5000)
+    }, 3000)
 
     return () => {
       clearTimeout(timer)
