@@ -50,14 +50,14 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="name"  />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
-                    type="email"
+                    type="text"
                     name="email"
-                    required
+                    
                   />
                 </li>
                 <li>
@@ -65,14 +65,14 @@ const Contact = () => {
                     placeholder="Subject"
                     type="text"
                     name="subject"
-                    required
+                    
                   />
                 </li>
                 <li>
                   <textarea
                     placeholder="Message"
                     name="message"
-                    required
+                    
                   ></textarea>
                 </li>
                 <li>
