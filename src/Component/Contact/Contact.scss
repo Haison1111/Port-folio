@@ -90,6 +90,7 @@
     position: absolute;
     right: 20%;
     top: 42%;
+    background-color: transparent;
   }
 
   @keyframes clockwise {
@@ -113,7 +114,7 @@
   }
   
   .gearbox {
-    background: #222831;
+    background: transparent;
     height: 182px;
     width: 261px;
     position: relative;
