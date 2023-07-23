@@ -12,7 +12,7 @@ import './index.scss'
 
 const Sidebar = () => (
   <div className="nav-bar">
-    <Link className="logo" to="/">
+    <Link className="logo" to="/home">
       <img src={LogoS} alt="logo" />
     </Link>
     <nav>
@@ -55,11 +55,12 @@ const Sidebar = () => (
         </a>
       </li>
       <li>
-        <a target="_blank">
+        <a target="_blank" href='https://github.com/Haison1111' rel="noreferrer" >
           <FontAwesomeIcon
             to="https://github.com/Haison1111"
             icon={faGithub}
             color="#EEEEEE"
+            
           />
         </a>
       </li>
