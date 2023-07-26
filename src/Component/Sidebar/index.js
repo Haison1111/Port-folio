@@ -16,7 +16,7 @@ const Sidebar = () => (
       <img src={LogoS} alt="logo" />
     </Link>
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/home">
+      <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon
           icon={faHome}
           color="#EEEEEE"

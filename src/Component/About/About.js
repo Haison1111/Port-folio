@@ -1,18 +1,17 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import '../Layout/index.scss'
-import { useState, useEffect } from 'react'
 import {
   faCss3,
-  faFigma,
   faGithub,
   faHtml5,
   faJsSquare,
-  faReact,
+  faReact
 } from '@fortawesome/free-brands-svg-icons'
-import './About.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import figmaLogo from '../../assets/images/figma2.png'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
+import '../Layout/index.scss'
+import './About.scss'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -65,7 +64,7 @@ const About = () => {
               <FontAwesomeIcon icon={faJsSquare} />
             </div>
             <div className="face5">
-              <img className="figma-logo" src={figmaLogo} />
+              <img className="figma-logo" src={figmaLogo} alt="figma" />
             </div>
             <div className="face6">
               <FontAwesomeIcon icon={faGithub} />
