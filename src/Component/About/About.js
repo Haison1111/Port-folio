@@ -70,6 +70,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGithub} />
             </div>
           </div>
+          {/* <div className='cube-shadow'></div> */}
         </div>
       </div>
       <Loader type="ball-zig-zag-deflect" />

@@ -16,15 +16,15 @@ import Portfolio from "./Component/Portfolio/Portfolio"
 function App() {
   return (
     <>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<Layout />} >
       <Route path="/home" index element={<Home/>} />
       <Route path="/about" element = {<About/>} />
       <Route path="/contact" element = {<Contact/>} />
       <Route path="/portfolio" element={<Portfolio />} />
       </Route>
-    </Routes>
-
+    </Routes> */}
+      <Layout />
     </>
   );
 }

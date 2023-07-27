@@ -12,11 +12,11 @@ import './index.scss'
 
 const Sidebar = () => (
   <div className="nav-bar">
-    <Link className="logo" to="/home">
+    <Link className="logo" to="/">
       <img src={LogoS} alt="logo" />
     </Link>
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/home">
+      <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon
           icon={faHome}
           color="#EEEEEE"
@@ -50,17 +50,28 @@ const Sidebar = () => (
     </nav>
     <ul>
       <li>
-        <a target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} color="#EEEEEE" />
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/s%C6%A1n-h%E1%BA%A3i-9bb12827b/"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            color="#EEEEEE"
+            to="https://www.linkedin.com/in/s%C6%A1n-h%E1%BA%A3i-9bb12827b/"
+          />
         </a>
       </li>
       <li>
-        <a target="_blank" href='https://github.com/Haison1111' rel="noreferrer" >
+        <a
+          target="_blank"
+          href="https://github.com/Haison1111"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon
             to="https://github.com/Haison1111"
             icon={faGithub}
             color="#EEEEEE"
-            
           />
         </a>
       </li>
